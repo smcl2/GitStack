@@ -3,9 +3,9 @@ package arraystack;
 public class ArrayStack {
 	int [] stack;
 	int top;
-	public ArrayStack(int capacity)
+	public ArrayStack(int size)
 	{
-		stack = new int[capacity];
+		stack = new int[size];
 		top = -1;
 	}
 	public boolean isEmpty()
