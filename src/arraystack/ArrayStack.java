@@ -8,7 +8,20 @@ public class ArrayStack {
 		stack = new int[size];
 		top = -1;
 	}
-	
+  
+	public boolean isEmpty()
+	{
+		return (top==-1);
+	}
+	public int pop()
+	{
+		int topItem = -1;
+		if (!isEmpty())
+		{
+			topItem = stack[top];
+		}
+		return topItem;
+  }
 	public boolean isFull()
 	{
 		return (top == stack.length-1);
