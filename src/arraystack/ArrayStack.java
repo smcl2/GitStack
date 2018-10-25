@@ -37,5 +37,9 @@ public class ArrayStack {
 		else
 			return false;
 	}
+	public int numItems()
+	{
+		return top+1;
+	}
 	
 }
