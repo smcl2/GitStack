@@ -38,4 +38,15 @@ public class ArrayStack {
 			return false;
 	}
 	
+	public int stackSearch(int key)
+	{
+		int location = -1;
+		for(int i=0;i<top;i++)
+		{
+			if (stack[i]==key)
+				location = i;
+		}
+		return location;
+	}
+	
 }
